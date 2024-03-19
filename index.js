@@ -32,7 +32,7 @@ function movieHTML(movie) {
 
 function movieInfo(imdbID) {
     localStorage.setItem("imdbID", imdbID)
-    window.location.href = `${window.location.origin}/movies.html`
+    window.location.href = `${window.location.origin}/Javascript-Project/movies.html`
 }
 
 
