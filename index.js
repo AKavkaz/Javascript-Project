@@ -12,7 +12,7 @@ const movieListEl = document.querySelector('.movie__wrapper')
 
 async function onSearchChange(event) {
     const searchTerm = event.target.value
-    const movies = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=fbb2e191`)
+    const movies = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=fbb2e191`)
     const moviesData = await movies.json()
     movieListEl.innerHTML = moviesData.Search.map((movie) => movieHTML(movie)).join('')
 }
