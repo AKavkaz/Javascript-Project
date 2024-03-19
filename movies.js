@@ -7,7 +7,7 @@ movieInfo();
 const id = localStorage.getItem("imdbID")
 
 async function movieDesc() {
-    const moviesInfo = await fetch(`https://www.omdbapi.com/?i=${localStorage.getItem("imdbID")}&apikey=fbb2e191`)
+    const moviesInfo = await fetch(`https://www.omdbapi.com/?apikey=fbb2e191&i=${localStorage.getItem("imdbID")}`)
     let moviesInfoData = await moviesInfo.json()
     if (!Array.isArray(moviesInfoData)) {
         moviesInfoData = [moviesInfoData];
