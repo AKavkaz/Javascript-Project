@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/2c61366f3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="row">
+                <nav>
+                    <div class="logo">
+                        <h1>Movie Finder</h1>
+                    </div>
+                    <div class="nav__links">
+                        <a class="nav__link" href="#">Home</a>
+                        <a class="nav__link" href="">Find your movie</a>
+                        <button class="btn1">Contact</button>
+                    </div>
+                    <button class="menu__button" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="menu__backdrop">
+                        <button class="menu__button menu__button--close" onclick="closeMenu()">
+                          <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                              <a class="menu__link" href="/index.html">Home</a>
+                            </li>
+                            <li class="menu__list">
+                              <a class="menu__link" href="/index.html">Find a Movie</a>
+                            </li>
+                            <li class="menu__list">
+                              <a class="menu__link" href="/index.html">Contact</a>
+                            </li>
+                          </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <div class="row">
+            <div class="container">
+                <h1 class="title">
+                    Find your favourite movies and TV shows!
+                </h1>
+                <h3 class="sub-title">
+                    Search movies & shows with <span class="red">Movie Finder</span> 
+                </h3>
+            </div>
+            <div class="input__container">
+                <input type="text" class="input" placeholder="Enter Keywords..." onchange="onSearchChange(event)">
+                <button class="input__button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="movie__wrapper">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
