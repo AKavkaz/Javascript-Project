@@ -6,6 +6,8 @@
     <title>Movie Info</title>
     <link rel="stylesheet" href="styles.css">
     <script src="movies.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2c61366f3d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -20,6 +22,24 @@
                         <a class="nav__link" href="https://akavkaz.github.io/Javascript-Project/">Find your movie</a>
                         <button class="btn1">Contact</button>
                     </div>
+                    <button class="menu__button" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="menu__backdrop">
+                        <button class="menu__button menu__button--close" onclick="closeMenu()">
+                          <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                              <a class="menu__link" href="https://akavkaz.github.io/Javascript-Project/">Home</a>
+                            </li>
+                            <li class="menu__list">
+                              <a class="menu__link" href="https://akavkaz.github.io/Javascript-Project/">Find a Movie</a>
+                            </li>
+                            <li class="menu__list">
+                              <a class="menu__link" href="https://akavkaz.github.io/Javascript-Project/">Contact</a>
+                            </li>
+                          </ul>
                 </nav>
             </div>
         </section>
